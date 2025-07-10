@@ -5,6 +5,7 @@
 html,body{
     height:100%;
     
+    
    
 }
 .header{
@@ -16,7 +17,8 @@ html,body{
     font-family: 'Times New Roman', Times, serif;
 }
 .head{
-   
+   top:0;
+   position: sticky;
     display: flex;
     background-color: rgb(203, 203, 209);
     height: 80px;

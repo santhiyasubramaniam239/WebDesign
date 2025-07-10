@@ -4,13 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Start from './files/start/start'
+import Footer from './files/footer/Footer'
 
 
 function App() {
  
-  return <Start/>
+  return (<div>
+          <Start/>
+         <Footer/>
+          </div>
+  )
    
-     
+    
 }
 
 export default App

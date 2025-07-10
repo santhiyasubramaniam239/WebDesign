@@ -4,4 +4,70 @@
 }
 html,body{
     height:100%;
+    background-color: rgb(39, 47, 88);
+}
+.footer{
+    display: flex;
+    gap:205px;
+    font-size:medium;
+    background-color: rgb(147, 145, 142);
+}
+.f11{
+    display: inline-flex;
+    margin-left: 20px;
+   width: 140px;
+}
+.f12{
+    display: inline-flex;
+    color:white;
+    margin-top: 35px;
+    width:100px;
+}
+.f13{
+    color: white;
+    display: inline-flex;
+    margin-top: 35px;
+   
+}
+.f14{
+    display: inline-flex;
+    color: white;
+    margin-top: 35px;
+}
+.footer1{
+    display: flex;
+    gap:70px;
+    font-size: large;
+    
+    background-color: rgb(147, 145, 142);
+}
+.end{
+    font-size: large;
+}
+.f15{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    width:300px;
+    margin-left: 20px;
+}
+.f16{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    width: 200px;
+    flex-direction: column;
+}
+.f17{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+   width:210px;
+    
+    flex-direction: column;
+}
+.f18{
+    display: inline-flex;
+   color: rgb(17, 19, 32);
+    width:30%;
+    cursor: pointer;
+    margin-right: 40px;
+    flex-direction: column;
 }

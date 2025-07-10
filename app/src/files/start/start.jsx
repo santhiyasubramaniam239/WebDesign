@@ -5,12 +5,14 @@ import instagram from'../../assets/instagram.png';
 import youtube1 from '../../assets/youtube1.png';
 import call1 from '../../assets/call1.png';
 import brand from '../../assets/brand.png';
+import whatsapp from '../../assets/whatsapp.jpeg';
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import About from "../About Us/About";
 import Quick from "../Quick Help/Quick";
 import Television from "../Television/Television";
 import Wooden from "../Wooden Cot/Wooden";
+import Footer from "../footer/Footer";
 
 
 export default function Start(){
@@ -45,6 +47,15 @@ export default function Start(){
             <NavLink style={{ display:'inline-flex',color:'black'}} to="/woodencot"><h3>Wooden Cot</h3></NavLink>
             <NavLink style={{ display:'inline-flex',color:'black'}} to="/quickhelp"><h3>Quick Help</h3></NavLink>
       </div>
+      
+      </div>
+      <div style={{position:'fixed',top:'75%',right:'0'}}>
+      <a href="https://api.whatsapp.com/send/?phone=919942388299&text=Hi%2C+I+would+like+to+connect+with+you+regarding+the+product+purchase%21%2C+can+i+call+you%3F&type=phone_number&app_absent=0"> <img src ={whatsapp} 
+       style={{height:'80px',width:'80px',
+        borderRadius:'10px', 
+         animation: 'pulse 5s infinite linear',
+       }}/></a>
+       <style>{`@keyframes pulse {0%{width:40px;height:40px}`}</style>
       </div>
       
       <Routes>
@@ -54,21 +65,8 @@ export default function Start(){
         <Route path="/woodencot" element={<Wooden/>}/>
         <Route path="/quickhelp" element={<Quick/>}/>
       </Routes>
-
-   
       
-      
-        
-        
-        
-        
-       
-        
-      
-    
-   
-     
-
-     
-    </div>)
+  </div>
+ 
+     )
 }
