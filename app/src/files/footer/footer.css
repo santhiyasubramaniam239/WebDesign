@@ -4,12 +4,13 @@
 }
 html,body{
     height:100%;
-    background-color: rgb(39, 47, 88);
+    background-color: rgb(228, 228, 228);
 }
 .footer{
     display: flex;
     gap:205px;
     font-size:medium;
+    
     background-color: rgb(147, 145, 142);
 }
 .f11{
@@ -21,18 +22,20 @@ html,body{
     display: inline-flex;
     color:white;
     margin-top: 35px;
+    margin-left: 19px;
     width:100px;
 }
 .f13{
     color: white;
     display: inline-flex;
     margin-top: 35px;
-   
+   width:100px;
 }
 .f14{
     display: inline-flex;
     color: white;
     margin-top: 35px;
+    width:140px;
 }
 .footer1{
     display: flex;
@@ -53,21 +56,114 @@ html,body{
 .f16{
     display: inline-flex;
     color: rgb(17, 19, 32);
-    width: 200px;
+    width: 100px;
     flex-direction: column;
 }
 .f17{
     display: inline-flex;
     color: rgb(17, 19, 32);
-   width:210px;
-    
+   width:240px;
+    margin-left: 80px;
     flex-direction: column;
 }
 .f18{
     display: inline-flex;
    color: rgb(17, 19, 32);
-    width:30%;
+    width:290px;
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 30px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.nav21{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+}
+.nav22{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+}
+.nav23{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+}
+.nav24{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+}
+.nav25{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+}
+.nav26{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+   
+    margin-left: 50px;
+}
+.nav27{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+     margin-left: 50px;
+}
+.nav28{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+     margin-left: 50px;
+}
+.nav29{
+    display: inline-flex;
+    color: rgb(17, 19, 32);
+    padding-top: 5px;
+     margin-left: 50px;
+}
+.nav21:hover{
+    color: white;
+}
+.nav22:hover{
+    color: white;
+}
+.nav23:hover{
+    color: white;
+}
+.nav24:hover{
+    color: white;
+}
+.nav25:hover{
+    color: white;
+}
+.nav26:hover{
+    color: white;
+}
+.nav27:hover{
+    color: white;
+}
+.nav28:hover{
+    color: white;
+}
+.nav29:hover{
+    color: white;
+}
+.f51{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   gap: 10px;
+   padding-bottom: 40px;
+   padding-top: 10px;
+}
+.end{
+    display: flex;
+    background-color:rgb(147, 145, 142) ;
+    text-align: center;
+    color:rgb(17,19,32);
+    padding-top: 50px;
+    padding-bottom: 50px;
     flex-direction: column;
 }

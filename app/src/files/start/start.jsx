@@ -6,13 +6,18 @@ import youtube1 from '../../assets/youtube1.png';
 import call1 from '../../assets/call1.png';
 import brand from '../../assets/brand.png';
 import whatsapp from '../../assets/whatsapp.jpeg';
-import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import {  NavLink, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import About from "../About Us/About";
 import Quick from "../Quick Help/Quick";
 import Television from "../Television/Television";
+import Privacy from "../footer/privacy";
 import Wooden from "../Wooden Cot/Wooden";
+import Return from "../footer/returns";
+import Shipping from "../footer/shipping";
+import Terms from "../footer/terms";
 import Footer from "../footer/Footer";
+
 
 
 export default function Start(){
@@ -41,11 +46,11 @@ export default function Start(){
         
          <div className="header">
          
-            <NavLink style={{ display:'inline-flex',color:'black'}} to="/"><h3>Home</h3></NavLink>
-            <NavLink style={{ display:'inline-flex',color:'black'}} to="/aboutus"><h3>About Us</h3></NavLink>
-            <NavLink style={{ display:'inline-flex',color:'black'}} to="/television"><h3>Television</h3></NavLink>
-            <NavLink style={{ display:'inline-flex',color:'black'}} to="/woodencot"><h3>Wooden Cot</h3></NavLink>
-            <NavLink style={{ display:'inline-flex',color:'black'}} to="/quickhelp"><h3>Quick Help</h3></NavLink>
+            <NavLink className="nav1"  to="/">Home</NavLink>
+            <NavLink className="nav2"  to="/aboutus">About Us</NavLink>
+            <NavLink className="nav3"  to="/television">Television</NavLink>
+            <NavLink className="nav4"  to="/woodencot">Wooden Cot</NavLink>
+            <NavLink className="nav5"  to="/quickhelp">Quick Help</NavLink>
       </div>
       
       </div>
@@ -64,8 +69,13 @@ export default function Start(){
         <Route path="/television" element={<Television/>}/>
         <Route path="/woodencot" element={<Wooden/>}/>
         <Route path="/quickhelp" element={<Quick/>}/>
+        <Route path="/privacy" element={<Privacy/>}/>
+        <Route path="/return" element={<Return/>}/>
+        <Route path="/shipping" element={<Shipping/>}/>
+        <Route path="/terms" element={<Terms/>}/>
+
       </Routes>
-      
+      <Footer/>
   </div>
  
      )

@@ -20,7 +20,7 @@ html,body{
    top:0;
    position: sticky;
     display: flex;
-    background-color: rgb(203, 203, 209);
+    background-color: rgb(247, 247, 253);
     height: 80px;
 }
 .logo{
@@ -103,4 +103,51 @@ a:hover{
   
     text-decoration: none;
     cursor: pointer;
+}
+
+.nav1{
+    display: inline-flex;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.nav1:hover{
+    color: rgb(6, 101, 101);
+}
+.nav2:hover{
+    color: rgb(6, 101, 101);
+}
+.nav3:hover{
+    color: rgb(6, 101, 101);
+}
+.nav4:hover{
+    color: rgb(6, 101, 101);
+}
+.nav5:hover{
+    color: rgb(6, 101, 101);
+}
+.nav2{
+    display: inline-flex;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav3{
+    display: inline-flex;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav4{
+    display: inline-flex;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav5{
+    display: inline-flex;
+    color: black;
+    font-weight: bold;
+   font-size: 20px;
 }
