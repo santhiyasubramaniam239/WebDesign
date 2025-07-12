@@ -20,7 +20,7 @@ html,body{
    top:0;
    position: sticky;
     display: flex;
-    background-color: rgb(247, 247, 253);
+    background-color: white;
     height: 80px;
 }
 .logo{
@@ -127,6 +127,26 @@ a:hover{
 .nav5:hover{
     color: rgb(6, 101, 101);
 }
+.nav6{
+    margin-top: 10px;
+}
+.nav8{
+    background: transparent;
+    font-size:16px;
+    color:#4860ac;
+    width:60px;
+    height:30px;
+    border:1px solid blue;
+    padding:5px 5px;
+    margin-top: 18px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.nav8:hover{
+    background-color:#c8c6c5 ;
+}
+
 .nav2{
     display: inline-flex;
     color: black;
@@ -151,3 +171,5 @@ a:hover{
     font-weight: bold;
    font-size: 20px;
 }
+
+

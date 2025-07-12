@@ -46,7 +46,6 @@ export default function Home(){
       height:'70vh',borderRadius:70,
       textAlign:'center',color:'white',paddingBottom:20,
     }}>
-      
       <Dots count ={images.length} activeIndex={index}/>
     </div>
     <div>

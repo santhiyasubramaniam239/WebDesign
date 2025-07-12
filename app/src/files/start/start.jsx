@@ -1,5 +1,7 @@
 import React from "react";
 import './start.css';
+import cart from '../../assets/cart.jpeg';
+import search from '../../assets/search.jpeg';
 import facebook from '../../assets/facebook.png';
 import instagram from'../../assets/instagram.png';
 import youtube1 from '../../assets/youtube1.png';
@@ -17,6 +19,7 @@ import Return from "../footer/returns";
 import Shipping from "../footer/shipping";
 import Terms from "../footer/terms";
 import Footer from "../footer/Footer";
+import Cart from "../cart/cart";
 
 
 
@@ -51,7 +54,14 @@ export default function Start(){
             <NavLink className="nav3"  to="/television">Television</NavLink>
             <NavLink className="nav4"  to="/woodencot">Wooden Cot</NavLink>
             <NavLink className="nav5"  to="/quickhelp">Quick Help</NavLink>
-      </div>
+         </div>
+         <div style={{display:"flex",marginLeft:80,marginTop:5}}> 
+            <NavLink className="nav6"  ><img src={search} height='45px'width='70px'></img></NavLink> 
+           <NavLink className="nav7"  to="/viewcart"><img src={cart} height='65px'width='90px'></img></NavLink> 
+          <button className="nav8" style={{marginLeft:20}}>sign in</button>
+    
+    </div>
+      
       
       </div>
       <div style={{position:'fixed',top:'75%',right:'0'}}>
@@ -73,6 +83,7 @@ export default function Start(){
         <Route path="/return" element={<Return/>}/>
         <Route path="/shipping" element={<Shipping/>}/>
         <Route path="/terms" element={<Terms/>}/>
+        <Route path="/viewcart" element={<Cart/>}/>
 
       </Routes>
       <Footer/>
