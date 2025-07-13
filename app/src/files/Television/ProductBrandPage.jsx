@@ -1,13 +1,20 @@
 import React from "react";
 import './television.css';
 import tv1 from '../../assets/tv1.png';
-import { tv1Products } from "../../data";
-export default function Television(){
+import { useParams, useNavigate } from "react-router-dom";
+import { brandProducts } from "../../data";
+export default function ProductBrandPage(){
+    const {brand} = useParams();
+    const navigate = useNavigate();
+    const products = brandProducts[brand?.toLowerCase()];
+    if(!products){
+        return <h2>No products found for "{brand}"</h2>
+    }
     return(<div>
      
       <div className="card1">
-        {tv1Products.map((tv) => (
-      <div className="tv1" key={tv.id}>
+        {products.map((tv) => (
+      <div className="tv1" key={tv.id} onClick={() => navigate(`/product/${brand}/${tv.id}`)} style={{ cursor: "pointer" }}>
 
         <img src= {tv.image} alt={tv.name} height='200px' width="300px" ></img>
         <div className="name"><h3>{tv.name}</h3></div>

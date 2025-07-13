@@ -17,9 +17,13 @@ import Privacy from "../footer/privacy";
 import Wooden from "../Wooden Cot/Wooden";
 import Return from "../footer/returns";
 import Shipping from "../footer/shipping";
+
 import Terms from "../footer/terms";
 import Footer from "../footer/Footer";
 import Cart from "../cart/cart";
+import Menu from "../Explore Menu/exploremenu";
+import Scroll from "../../scroll";
+import ProductBrandPage from "../Television/ProductBrandPage";
 
 
 
@@ -72,7 +76,7 @@ export default function Start(){
        }}/></a>
        <style>{`@keyframes pulse {0%{width:40px;height:40px}`}</style>
       </div>
-      
+      <Scroll/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/aboutus" element={<About/>}/>
@@ -84,8 +88,10 @@ export default function Start(){
         <Route path="/shipping" element={<Shipping/>}/>
         <Route path="/terms" element={<Terms/>}/>
         <Route path="/viewcart" element={<Cart/>}/>
+        <Route path="/product/:brand" element={<ProductBrandPage/>}/>
 
       </Routes>
+     
       <Footer/>
   </div>
  

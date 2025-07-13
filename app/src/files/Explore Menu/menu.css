@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height:max-content;
+   
+}
+.explore-menu{
+    background-color: rgb(205, 179, 179);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height:320px;
+    gap:20px;
+}
+.explore-menu h1{
+    color:#262626;
+    font-weight:500;
+    margin: 20px;
+}
+.explore-menu-text{
+    
+    color:#a33737;
+     margin: 20px;
+     
+}
+.explore-menu-list{
+    display: flex;
+    transition: transform 0.1s ease;
+    align-items: center;
+    gap:30px;
+    margin-left: 0px;
+    text-align: center;
+    margin:20px ;
+    overflow-x:scroll ;
+    cursor:pointer;
+}
+.explore-menu-list-item{
+    margin: 20px;
+}
+.explore-menu-list::-webkit-scrollbar{
+   display: none;
+}
+.explore-menu-list:hover{
+    transform: scale(1.05);
+}
