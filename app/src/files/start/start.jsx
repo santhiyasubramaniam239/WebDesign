@@ -24,6 +24,7 @@ import Cart from "../cart/cart";
 import Menu from "../Explore Menu/exploremenu";
 import Scroll from "../../scroll";
 import ProductBrandPage from "../Television/ProductBrandPage";
+import ProductDetail from "../Television/ProductDetail";
 
 
 
@@ -89,6 +90,7 @@ export default function Start(){
         <Route path="/terms" element={<Terms/>}/>
         <Route path="/viewcart" element={<Cart/>}/>
         <Route path="/product/:brand" element={<ProductBrandPage/>}/>
+        <Route path="/product/:brand/:id" element={<ProductDetail/>} />
 
       </Routes>
      
